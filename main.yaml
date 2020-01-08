@@ -1,0 +1,5 @@
+---
+- name: PLAYBOOK that calls the ExampleRole
+  hosts: all
+  roles:
+    - ExampleRole
