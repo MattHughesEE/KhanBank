@@ -1,0 +1,7 @@
+---
+- name: Install Apache (Shell Module)
+  hosts: all
+  tasks:
+    
+    - name: Install apache using shell command
+      shell: yum install apche
