@@ -1,6 +1,6 @@
 ---
 # tasks file for ExampleRole
-- name: Example of a Playbook that calls the ExampleRole
+- name: Tasks file for ExampleRole
   hosts: all
   vars:
     yum_package: httpd
