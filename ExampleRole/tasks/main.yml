@@ -1,10 +1,10 @@
 ---
 # tasks file for ExampleRole
 - name: Install Apache
-    yum:
-      name: "{{ yum_package }}"
-      state: latest
+  yum:
+    name: "{{ yum_package }}"
+    state: latest
   register: result
- - debug:
-     var=result
+- debug:
+    var=result
   
