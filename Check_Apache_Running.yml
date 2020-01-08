@@ -9,3 +9,6 @@
       service:
         name: httpd
         state: started
+      register: output
+     - debug:
+         var=output
