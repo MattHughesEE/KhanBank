@@ -4,4 +4,4 @@
   tasks:
     
     - name: Install apache using shell command
-      shell: yum install apche
+      shell: yum install httpd
