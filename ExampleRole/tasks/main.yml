@@ -7,4 +7,10 @@
   register: result
 - debug:
     var=result
+    
+- name: Install Nginx
+  yum:
+    name: httpd
+    state: latest
+  when: result is true
   
