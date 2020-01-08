@@ -1,11 +1,10 @@
 ---
 # tasks file for ExampleRole
-- name: Tasks file for ExampleRole
-  hosts: all
-  vars:
-    yum_package: httpd
-  tasks:
-  - name: Install Apache
+- name: Install Apache
     yum:
-      name: httpd
+      name: "{{ yum_package }}"
       state: latest
+  register: result
+ - debug:
+     var=result
+  
