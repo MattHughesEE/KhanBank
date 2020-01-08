@@ -1,0 +1,13 @@
+# This playbook installs Apache on a Linux Server.
+# Targets applied to all servers in the LINUX group under the hosts file.
+
+---
+- name: Install Apache on Linux VM
+  hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install apache httpd but avoid starting it immeditely
+      yum:
+        name: httpd
+        state: latest
